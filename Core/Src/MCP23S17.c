@@ -76,7 +76,7 @@ void MCP23S17_SetMultiplePins(uint8_t port, uint8_t mask, uint8_t state)
 			a_state |= mask;
 		else
 			a_state &= ~mask;
-		MCP23S17_WriteReg(OLATB, a_state);
+		MCP23S17_WriteReg(OLATA, a_state);
 	}
 	else if (port == 'B')
 	{
