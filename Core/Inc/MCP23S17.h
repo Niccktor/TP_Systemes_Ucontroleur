@@ -19,6 +19,7 @@
 #define OLATB	0x15
 
 void MCP23S17_Init(SPI_HandleTypeDef *hspi);
-void MCP23S17_WriteReg(uint8_t reg, uint8_t data);
+void MCP23S17_SetPin(uint8_t port, uint8_t pin, uint8_t state);
+void MCP23S17_SetMultiplePins(uint8_t port, uint8_t mask, uint8_t state);
 
 #endif /* INC_MCP23S17_H_ */

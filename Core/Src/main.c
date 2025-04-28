@@ -80,12 +80,15 @@ void	testGPIOExpander()
 	int state = 1;
 	while (i < 8)
 	{
-		MCP23S17_WriteReg(0x15, state);
-		MCP23S17_WriteReg(0x14, state);
+		MCP23S17_SetPin('A', i, 0);
+		MCP23S17_SetPin('B', i, 0);
+
 		state *= 2;
 		i++;
 		HAL_Delay(1000);
 	}
+	MCP23S17_SetMultiplePins('A', 0xff, 0xff);
+	MCP23S17_SetMultiplePins('B', 0xff, 0xff);
 	return ;
 }
 /* USER CODE END 0 */
