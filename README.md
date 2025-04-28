@@ -11,7 +11,7 @@
 ## Configuration
     Ref GPIO Expander : MCP23S17
     Sur la Nucelo, le SPI3 et utilisé pour le MCP23S17.
-Configuration du SPI dans l'IOC
+	Configuration du SPI dans l'IOC
 	SPI3:
 		Full Duplex Master
 		Data Size = 8
