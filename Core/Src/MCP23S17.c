@@ -52,7 +52,7 @@ void MCP23S17_SetPin(uint8_t port, uint8_t pin, uint8_t state)
 		return ;
 	if (port == 'A')
 	{
-		if (state)
+		if (!state)
 			a_state |= (1 << pin);
 		else
 			a_state &= ~(1 << pin);
@@ -60,7 +60,7 @@ void MCP23S17_SetPin(uint8_t port, uint8_t pin, uint8_t state)
 	}
 	else if (port == 'B')
 	{
-		if (state)
+		if (!state)
 			b_state |= (1 << pin);
 		else
 			b_state &= ~(1 << pin);
