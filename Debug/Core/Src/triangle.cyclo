@@ -1,0 +1,5 @@
+../Core/Src/triangle.c:19:6:toothwave	2
+../Core/Src/triangle.c:23:6:GenerateTriangleWave	3
+../Core/Src/triangle.c:32:6:FillAudioBufferStereo	2
+../Core/Src/triangle.c:39:6:StartTrianglePlayback_SAI	1
+../Core/Src/triangle.c:47:6:HAL_SAI_TxCpltCallback	1
