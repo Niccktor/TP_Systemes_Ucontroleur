@@ -55,7 +55,12 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+void	testLed()
+{
+    HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin); // Exemple pour la pin PA5
+    HAL_Delay(500); // 500 ms d'intervalle
+	return ;
+}
 /* USER CODE END 0 */
 
 /**
@@ -96,6 +101,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  testLed();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
